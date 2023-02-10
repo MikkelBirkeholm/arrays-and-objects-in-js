@@ -1,0 +1,47 @@
+:root {
+  --color-bg: #3a3845;
+  --color-text: #f7ccac;
+  --color-text-alt: #f7ccab;
+  --color-accent-1: #c69b7b;
+  --color-accent-2: #826f66;
+  --box-shadow: 0 2px 20px #f7ccac50;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+input[type='text'],
+button {
+  outline: none;
+  border: 1px solid #f7ccac;
+  border-radius: 0.5rem;
+  background-color: #f7ccac50;
+  padding: 5px;
+  color: var(--color-text);
+}
+
+button {
+  cursor: pointer;
+}
+.codebox {
+  width: clamp(2ch, 700px, 90vw);
+}
+
+.codebox > pre {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}

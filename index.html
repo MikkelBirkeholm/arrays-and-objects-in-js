@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/dark.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="src/app.js" type="module"></script>
+  </head>
+  <body>
+    <h1>Arrays and objects</h1>
+    <div class="codebox">
+      <h2>Arrays</h2>
+      <pre><code class="language-javascript">let myArray = ['Tekst', 80085, 'Tekst2']</code></pre>
+    </div>
+    <div>
+      <label>myArray.<input type="text" name="Array" id="arr-input" /></label>
+      <button id="go-btn-arr">Go</button>
+    </div>
+    <div class="codebox">
+      <p id="print-array"></p>
+    </div>
+    <div class="codebox">
+      <h2>Objects</h2>
+      <pre><code class="language-javascript">let myObject = {
+        firstName: 'Johnny',
+        lastName: 'Cash',
+        occupation: 'Musician',
+        url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        ringOfFire: function () {
+            window.open(this.url)
+        }
+    }
+    </code></pre>
+    </div>
+
+    <div>
+      <label>myObject.<input type="text" name="Object" id="obj-input" /></label>
+      <button id="go-btn-obj">Go</button>
+    </div>
+
+    <div class="codebox">
+      <p id="print-object"></p>
+    </div>
+  </body>
+</html>
