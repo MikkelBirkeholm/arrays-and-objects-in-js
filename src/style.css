@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Prompt", sans-serif;
+  font-family: 'Prompt', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
   display: flex;
@@ -30,7 +30,7 @@ h2 {
   letter-spacing: 5px;
 }
 
-input[type=text],
+input[type='text'],
 button {
   outline: none;
   border: 1px solid #f7ccac;
@@ -38,6 +38,10 @@ button {
   background-color: rgba(247, 204, 172, 0.3137254902);
   padding: 5px;
   color: var(--color-text);
+}
+
+#arr-input {
+  width: 5ch;
 }
 
 .explainer {
